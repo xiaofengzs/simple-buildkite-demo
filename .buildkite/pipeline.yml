@@ -1,0 +1,19 @@
+steps:
+  - command: "./auto/run-unit-tests"
+    label: "Run unit tests"
+
+  - command: "./auto/check-code-style"
+    label: "Check code style"
+
+  - wait
+
+  - command: "./auto/release"
+    label: "Build and Release docker image"
+    branches: "master"
+
+  - block: "Deploy"
+    branches: "master"
+
+  - command: "./auto/deploy"
+    label: "Deploy"
+    branches: "master"
