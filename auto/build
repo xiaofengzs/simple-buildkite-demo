@@ -1,4 +1,3 @@
 echo '----------------- building -----------------'
 
 buildkite-agent artifact upload ../README.md
-f
