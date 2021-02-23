@@ -1,2 +1,1 @@
 echo '----------------- checking code style -----------------'
-buildkite-agent artifact upload ../README.md
