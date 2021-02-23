@@ -1,1 +1,3 @@
 echo '----------------- releasing -----------------'
+
+buildkite-agent artifact upload ../README.md
